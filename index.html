@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Iqra Nexus - Membership Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f9;
+      padding: 20px;
+    }
+    .form-container {
+      background-color: white;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input[type="text"], input[type="password"], select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .section {
+      margin-top: 20px;
+    }
+    .inline {
+      display: inline-block;
+      margin-right: 15px;
+    }
+    input[type="submit"] {
+      background-color: #2980b9;
+      color: white;
+      padding: 12px 25px;
+      margin-top: 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    input[type="submit"]:hover {
+      background-color: #1c5980;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h1>Iqra Nexus Member Registration</h1>
+    <form action="#" method="post">
+      
+      <label for="firstname">First Name</label>
+      <input type="text" id="firstname" name="firstname" required>
+
+      <label for="lastname">Last Name</label>
+      <input type="text" id="lastname" name="lastname" required>
+
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+
+      <div class="section">
+        <label>Gender</label>
+        <div class="inline"><input type="radio" name="gender" value="male" required> Male</div>
+        <div class="inline"><input type="radio" name="gender" value="female"> Female</div>
+      </div>
+
+      <div class="section">
+        <label>Religion</label>
+        <div class="inline"><input type="checkbox" name="religion" value="muslim"> Muslim</div>
+        <div class="inline"><input type="checkbox" name="religion" value="others"> Others</div>
+      </div>
+
+      <div class="section">
+        <label>IT Experience</label>
+        <div class="inline"><input type="checkbox" name="it_exp" value="hardware"> Hardware Expert</div>
+        <div class="inline"><input type="checkbox" name="it_exp" value="software"> Software Expert</div>
+        <div class="inline"><input type="checkbox" name="it_exp" value="graphic"> Graphic Designer</div>
+        <div class="inline"><input type="checkbox" name="it_exp" value="network"> Network Expert</div>
+      </div>
+
+      <label for="department">Select Department</label>
+      <select id="department" name="department" required>
+        <option value="">--Select--</option>
+        <option value="CSE">CSE</option>
+        <option value="EEE">EEE</option>
+        <option value="Power">Power</option>
+        <option value="Pharmacy">Pharmacy</option>
+      </select>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+</body>
+</html>
